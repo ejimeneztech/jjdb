@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    display: block;
+    overflow: auto;
+}
+body {
+    font-family: Verdana, Arial, sans-serif;
+    /* background-image: url("bg.gif"); */
+    background-color: #1F2224 ;
+}
+header {
+    background-color:#00008B;
+    height: 180px;
+    
+    /* background-image: url("profile.jpg"); */
+    background-repeat: no-repeat;
+    display: block;
+    
+}
+#wrapper {
+    background-color: #00008B;
+    color: white;
+    width: 90%;
+    margin: auto;
+    min-width: 450px;
+    max-width: 1020px;
+    box-shadow: 5px 5px 5px #000000;
+}
+header h1 {
+    padding-left: 450px;
+    padding-top: 50px;
+}
+header span {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    /* padding-left: 145px; */
+    text-align: center;
+    display: block;
+}
+
+
+nav {
+    float: left;
+    width: 224px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    border-bottom: 1px solid #ffffff;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: background-color 2s linear;
+}
+nav a:link {
+    color: #2b2bf5;
+}
+nav a:visited {
+    color: #a9a9a9;
+}
+nav a:hover {
+    color: #f8f8ff;
+    background-color: #2b2bf5;
+}
+
+
+/* Add a card effect for blogs */
+.card {
+    background-color: grey;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+
+main {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    overflow: auto;
+}
+h2 {
+    color: #000000;
+    font-family: arial, sans-serif;
+    margin: 5px;
+    text-align: left;
+}
+
+h3 {
+    color: #000000;
+    font-family: arial, sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+
+h4 {
+    background-color: #d3d3d3;
+    font-size: 1.2em;
+    padding-left: 3em;
+    padding-right: 2em;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+    clear: left;
+}
+#homeburger {
+    background-image: url("images/homeburger.jpg");
+    background-size: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+footer {
+    font-size: 70%;
+    text-align: center;
+    padding: 10px;
+    background-color: #00008B;
+    clear: both;
+}
+
+
+header,
+main,
+nav,
+footer {
+    display: block;
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        background-color: #869dc7;
+    }
+    #wrapper {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0.5em;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav a {
+        border-style: none;
+    }
+    h1,
+    h2 {
+        font-size: 120%;
+    }
+    p {
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        min-width: 0;
+    }
+    header {
+        background-image: url(images/spaceburgerlogo.jpg);
+    }
+    header h1 {
+        padding-left: 0;
+    }
+    h1,
+    h2 {
+        font-size: 100%;
+    }
+    span {
+        font-size: 80%;
+    }
+    figure {
+        display: none;
+    }
+    nav,
+    nav ul,
+    nav li {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D;
+    }
+}
+table {
+    width: 60%;
+    margin: auto;
+    border: 5px solid #000000;
+}
+td {
+    text-align: center;
+    color: purple;
+}
+td,
+th {
+    border: 1px solid #000000;
+    padding: 0.5em;
+    font-family: Arial, sans-serif;
+}
+.altrow {
+    background-color: #a9a9a9;
+}
+.nutrition {
+    background-color: yellow;
+}
+.menupic {
+    background-color: black;
+}
+audio {
+    display: block;
+    margin-top: 1em;
+}
+.details {
+    overflow: auto;
+}
