@@ -7,6 +7,7 @@ main {
     padding-bottom: 2em;
     display: block;
     overflow: auto;
+   
 }
 body {
     font-family: Verdana, Arial, sans-serif;
@@ -43,6 +44,7 @@ header span {
     text-align: center;
     display: block;
 }
+
 
 
 nav {
