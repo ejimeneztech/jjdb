@@ -18,13 +18,14 @@ content="width=device-width, initial-scale=1.0">
 </nav>
 <main>
 <div id="intro"></div>
-<h2>Armbar Detail page</h2>
+{% for detail in details %}
+<h2>detail.title</h2>
 <ol>
     <li>Grab arm</li>
     <li>Exctend </li>
     <li>Break! </li>
 </ol>
-
+{% endfor %}
 
 
 </main>
