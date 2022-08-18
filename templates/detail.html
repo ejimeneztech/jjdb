@@ -18,14 +18,15 @@ content="width=device-width, initial-scale=1.0">
 </nav>
 <main>
 <div id="intro"></div>
-{% for detail in details %}
-<h2>detail.title</h2>
-<ol>
-    <li>Grab arm</li>
-    <li>Exctend </li>
-    <li>Break! </li>
-</ol>
-{% endfor %}
+
+<h2>{{details.title}}</h2>
+
+    {% for step in details.steps %}
+    <h6>{{step}}</h6>
+    {% endfor %}
+
+
+
 
 
 </main>
