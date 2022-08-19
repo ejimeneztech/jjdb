@@ -17,11 +17,12 @@ load_dotenv(os.path.join(project_folder, '.env'))
 
 
 ACCESS_KEY = os.getenv('AWS_ACCESS_KEY_ID')
-SECRET_KEY = os.getenv('AWS_SECRET_ACCESS_KEY_ID')
+SECRET_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
 # ACCESS_KEY = os.environ["AWS_ACCESS_KEY_ID"]
 # SECRET_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
 
+print(ACCESS_KEY, SECRET_KEY)
 
 
 auth = AWSRequestsAuth(aws_access_key=ACCESS_KEY,
