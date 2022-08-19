@@ -1,10 +1,8 @@
-from copyreg import constructor
-from email.mime import application
 from flask import Flask, render_template
 import requests
 from aws_requests_auth.aws_auth import AWSRequestsAuth
 import os
-
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
@@ -14,8 +12,15 @@ GET_POSTS = "https://7shbjqoi1m.execute-api.us-west-2.amazonaws.com/dev/jitzdb-g
 GET_DETAIL = "https://7shbjqoi1m.execute-api.us-west-2.amazonaws.com/dev/jitzdb-get-detail"
 
 
-ACCESS_KEY = os.environ["AWS_ACCESS_KEY_ID"]
-SECRET_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
+project_folder = os.path.expanduser('~/jjdb/')
+load_dotenv(os.path.join(project_folder, '.env'))
+
+
+ACCESS_KEY = os.getenv('AWS_ACCESS_KEY_ID')
+SECRET_KEY = os.getenv('AWS_SECRET_ACCESS_KEY_ID')
+
+# ACCESS_KEY = os.environ["AWS_ACCESS_KEY_ID"]
+# SECRET_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
 
 
 
